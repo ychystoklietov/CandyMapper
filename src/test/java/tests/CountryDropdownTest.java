@@ -11,6 +11,8 @@ public class CountryDropdownTest extends BaseTest {
         homePage.openURL();
         homePage.closePopUpBTN();
         homePage.selectDesiredCountry("Rutland");
+        //Negative test
+//        homePage.selectDesiredCountry("Gdansk");
 
     }
 }

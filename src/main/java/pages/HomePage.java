@@ -41,8 +41,8 @@ public class HomePage extends BasePage {
             String url = element.getAttribute("href");
 
             if (url == null || url.isEmpty()) {
-                System.out.println("URL is either not configured for anchor tag or it is empty");
-                return true;
+//                System.out.println("URL is either not configured for anchor tag or it is empty");
+                throw new RuntimeException("URL is either not configured for anchor tag or it is empty");
             }
 
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
@@ -51,15 +51,15 @@ public class HomePage extends BasePage {
             int responseCode = connection.getResponseCode();
 
             if (responseCode >= 400) {
-                System.out.println("Broken link: " + url + " - Response Code: " + responseCode);
-                return true;
+//                System.out.println("Broken link: " + url + " - Response Code: " + responseCode);
+                throw new RuntimeException("Link is broken. HTTP Status code: " + responseCode);
             } else {
                 System.out.println("Valid link: " + url + " - Response Code: " + responseCode);
-                return false;
+                return true;
             }
         } catch (IOException e) {
-            System.out.println("Error checking link: " + e.getMessage());
-            return true;
+//            System.out.println("Error checking link: " + e.getMessage());
+            throw new RuntimeException("Error checking the link status", e);
         }
     }
 

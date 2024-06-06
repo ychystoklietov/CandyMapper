@@ -1,10 +1,14 @@
 package tests;
 
-import dev.failsafe.internal.util.Durations;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import java.time.Duration;
 
 public class BaseTest {
 
@@ -12,13 +16,24 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
+        System.out.println("Start Chrome");
         driver = new ChromeDriver();
-
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterClass
     public void tearDown() {
+        System.out.println("Delete all cookies");
+        driver.manage().deleteAllCookies();
+        System.out.println("End of the tests");
         driver.quit();
     }
+
+
+
+
+
+
+
 }

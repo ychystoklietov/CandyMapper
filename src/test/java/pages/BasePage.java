@@ -1,21 +1,23 @@
 package pages;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+import java.io.File;
 import java.time.Duration;
+import java.util.Scanner;
 
+import static java.lang.System.getProperty;
 
 public class BasePage {
 
     public WebDriver driver;
     public WebDriverWait wait;
+    public static String JSON_MAIN_FOLDER = getProperty("user.dir") + File.separator + "src/main/java/json/";
 
 
     public BasePage(WebDriver driver) {
@@ -23,16 +25,16 @@ public class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void waitForElementToBeClickable(By by) {
-        wait.until(ExpectedConditions.elementToBeClickable(by));
+    public void waitForElementToBeClickable(By locator) {
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public void waitForElementToBeVisible(By by) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    public void waitForElementToBeVisible(By locator) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void waitForTextToBePresentInElement(By by, String text) {
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(by, text));
+    public void waitForTextToBePresentInElement(By locator, String text) {
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
     }
 
     public String getText(By by) {
@@ -59,25 +61,6 @@ public class BasePage {
             return false;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

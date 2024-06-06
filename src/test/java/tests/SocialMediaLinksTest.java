@@ -1,9 +1,7 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
-import pages.LoginPage;
 
 public class SocialMediaLinksTest extends BaseTest {
 

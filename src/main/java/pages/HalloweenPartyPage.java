@@ -1,5 +1,6 @@
 package pages;
 
+import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -13,9 +14,10 @@ public class HalloweenPartyPage extends BasePage {
     By HOSTING_PARTY_BTN = By.xpath("//a[text()=\"I Am Hosting A Party\"]");
     By ATTENDING_PARTY_BTN = By.xpath("//a[text()=\"I Am Attending A Party\"]");
 
-    public String getHalloweenPartyTitleText() {
+
+    public void checkHalloweenPartyTitleText() {
         isElementPresent(HALLOWEEN_PARTY_TITLE_TEXT);
-        return getText(HALLOWEEN_PARTY_TITLE_TEXT);
+        Assert.assertEquals(getText(HALLOWEEN_PARTY_TITLE_TEXT), "Halloween Party");
     }
 
     public void clickOnHostingBtn() {

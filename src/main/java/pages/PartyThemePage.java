@@ -14,10 +14,10 @@ public class PartyThemePage extends BasePage {
     By ZOMBIES_BTN = By.xpath("//a[text()=\"Zombies\"]");
     By GHOSTS_BTN = By.xpath("//a[text()=\"Ghosts\"]");
 
-    public String getPartyThemeTitleText() {
+
+    public void checkPartyThemeTitle() {
         waitForElementToBeVisible(PARTY_THEME_TITLE_TEXT);
-        isElementPresent(PARTY_THEME_TITLE_TEXT);
-        return getText(PARTY_THEME_TITLE_TEXT);
+        Assert.assertEquals(getText(PARTY_THEME_TITLE_TEXT), "Party Theme");
     }
 
     public void clickOnZombiesBtn() {

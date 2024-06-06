@@ -1,5 +1,6 @@
 package pages;
 
+import junit.framework.Assert;
 import org.checkerframework.dataflow.qual.AssertMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,14 +36,20 @@ public class LoginPage extends BasePage {
     public void clickOnCreateAccountBtn() {
         driver.findElement(CREATE_ACCOUNT_BTN).click();
     }
-    public String getErrorMessageEmail() {
-        return getText(ERROR_MESSAGE_EMAIL);
+
+    public void checkErrorMessageEmail() {
+        waitForElementToBeVisible(ERROR_MESSAGE_EMAIL);
+        Assert.assertEquals(getText(ERROR_MESSAGE_EMAIL), "Enter a valid email address.");
     }
-    public String getErrorMessagePassword() {
-        return getText(ERROR_MESSAGE_PASSWORD);
+
+    public void checkErrorMessagePassword() {
+        waitForElementToBeVisible(ERROR_MESSAGE_PASSWORD);
+        Assert.assertEquals(getText(ERROR_MESSAGE_PASSWORD), "Passwords can’t be nothing.");
     }
-    public String getErrorMessageCombo() {
-        return getText(ERROR_MESSAGE_COMBO);
+
+    public void checkErrorMessageCombo() {
+        waitForElementToBeVisible(ERROR_MESSAGE_COMBO);
+        Assert.assertEquals(getText(ERROR_MESSAGE_COMBO), "The password/email address combo is incorrect.");
     }
 
 

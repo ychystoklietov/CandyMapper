@@ -1,5 +1,6 @@
 package pages;
 
+import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -59,8 +60,6 @@ public class HomePage extends BasePage {
         }
     }
 
-
-
     public void clickJoinUsBTN() {
         isElementPresent(JOIN_US_BTN);
         clickOnElement(JOIN_US_BTN);
@@ -79,10 +78,10 @@ public class HomePage extends BasePage {
         clickOnElement(POPUP_CLOSE_BTN);
     }
 
-    public String getSharingToSocialMediaTitle() {
+    public void checkSharingToSocialMediaTitle() {
         scrollToElement(SHARING_TO_SOCIAL_MEDIA_TITLE);
         isElementPresent(SHARING_TO_SOCIAL_MEDIA_TITLE);
-        return getText(SHARING_TO_SOCIAL_MEDIA_TITLE);
+        Assert.assertEquals(getText(SHARING_TO_SOCIAL_MEDIA_TITLE), "Connect with us on Social Media");
     }
     public void checkFacebookLink() {
         scrollToElement(FACEBOOK_ICON);

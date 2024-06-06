@@ -1,5 +1,6 @@
 package pages;
 
+import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -20,10 +21,11 @@ public class CreateAccountPage extends BasePage {
 
 
 
-    public String getCreateAccountTitleText() {
+    public void checkCreateAccountTitleMessage() {
         isElementPresent(CREATE_ACCOUNT_TITLE);
-        return getText(CREATE_ACCOUNT_TITLE);
+        Assert.assertEquals(getText(CREATE_ACCOUNT_TITLE), "Create Account");
     }
+
 
     public void setFirstName(String name) {
         driver.findElement(FIRST_NAME_INPUT).sendKeys(name);
@@ -45,8 +47,10 @@ public class CreateAccountPage extends BasePage {
         isElementPresent(CREATE_ACCOUNT_BTN);
         clickOnElement(CREATE_ACCOUNT_BTN);
     }
-    public String getSuccessMessage() {
-        return getText(CREATE_ACCOUNT_SUCCESS_SCREEN);
+
+    public void checkSuccessMessage() {
+        isElementPresent(CREATE_ACCOUNT_SUCCESS_SCREEN);
+        Assert.assertEquals(getText(CREATE_ACCOUNT_SUCCESS_SCREEN), "Check your email");
     }
 
 

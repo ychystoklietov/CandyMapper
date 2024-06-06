@@ -13,7 +13,7 @@ public class SocialMediaLinksTest extends BaseTest {
 
         homePage.openURL();
         homePage.closePopUpBTN();
-        Assert.assertEquals(homePage.getSharingToSocialMediaTitle(), "Connect with us on Social Media");
+        homePage.checkSharingToSocialMediaTitle();
         homePage.checkFacebookLink();
         homePage.checkInstagramLink();
         homePage.checkLinkedinLink();

@@ -21,12 +21,14 @@ public class HostingZombiePartyTest extends BaseTest {
         homePage.openURL();
         homePage.closePopUpBTN();
         homePage.clickHalloweenPartyBTN();
-        Assert.assertEquals(halloweenPartyPage.getHalloweenPartyTitleText(), "Halloween Party");
+        halloweenPartyPage.checkHalloweenPartyTitleText();
         halloweenPartyPage.clickOnHostingBtn();
-        Assert.assertEquals(partyThemePage.getPartyThemeTitleText(), "Party Theme");
+        partyThemePage.checkPartyThemeTitle();
         partyThemePage.clickOnZombiesBtn();
-        Assert.assertEquals(bringingGuestsPage.getBringingGuestsTitleText(), "Are you bringing any guests?");
-        bringingGuestsPage.checkDropdown(driver);
+        bringingGuestsPage.checkBringingGuestsTitle();
+        bringingGuestsPage.setEmail("test@mail.com");
+        bringingGuestsPage.clickOnRemindMeBTN();
+        bringingGuestsPage.checkSuccessInfoNotified();
 
     }
 

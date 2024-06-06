@@ -16,8 +16,8 @@ public class InvalidLoginTest extends BaseTest {
         homePage.closePopUpBTN();
         homePage.clickJoinUsBTN();
         loginPage.clickOnSignInSubmitBtn();
-        Assert.assertEquals(loginPage.getErrorMessageEmail(), "Enter a valid email address.");
-        Assert.assertEquals(loginPage.getErrorMessagePassword(), "Passwords can’t be nothing.");
+        loginPage.checkErrorMessageEmail();
+        loginPage.checkErrorMessagePassword();
    }
 
 

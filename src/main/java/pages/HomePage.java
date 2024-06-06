@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 
 import java.net.URL;
+import java.util.List;
 
 
 public class HomePage extends BasePage {
@@ -16,6 +17,8 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+
+
 
     String baseURL = "https://candymapper.com/";
 
@@ -114,6 +117,38 @@ public class HomePage extends BasePage {
         scrollToElement(YOUTUBE_ICON);
         isElementPresent(YOUTUBE_ICON);
         isLinkBroken(YOUTUBE_ICON);
+    }
+
+    public List<WebElement> getDropdownList() {
+        scrollToElement(SHARING_TO_SOCIAL_MEDIA_TITLE);
+        WebElement iframe = driver.findElement(By.xpath("//div[@id='bs-6']/span/iframe"));
+        driver.switchTo().frame(iframe);
+        return driver.findElements(By.xpath("//option"));
+    }
+
+    public void selectCountryFromList(List<WebElement> dropdownList, String country) {
+        boolean found = false;
+        for (WebElement element : dropdownList) {
+            if (element.getText().equals(country)) {
+                element.click();
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+
+            throw new RuntimeException("Error: Country '" + country + "' not found in the dropdown list.");
+        } else {
+            System.out.println("Country selected successfully: " + country);
+        }
+
+        driver.switchTo().defaultContent();
+
+    }
+
+    public void selectDesiredCountry(String city) {
+        selectCountryFromList(getDropdownList(), city);
     }
 
 

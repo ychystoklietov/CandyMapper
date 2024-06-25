@@ -22,7 +22,7 @@ public class CreateAccountTest extends BaseTest {
         createAccountPage.setLastName("TestLastName");
         createAccountPage.setEmail("testowy@mail.com");
         createAccountPage.setPhone("1231231231");
-        createAccountPage.clickOnCheckboxMailing();
+//        createAccountPage.clickOnCheckboxMailing();
         createAccountPage.clickOnCreateAccountBtn();
         createAccountPage.checkSuccessMessage();
 

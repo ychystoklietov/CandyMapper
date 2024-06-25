@@ -1,6 +1,7 @@
 package pages;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,7 +27,9 @@ public class HomePage extends BasePage {
     By HALLOWEEN_PARTY_BTN = By.cssSelector("a[href='/halloween-party'].c1-56");
     By CONTACT_US_NAME_FIELD = By.id("input28");
     By CONTACT_US_EMAIL_FIELD = By.id("input28");
-    By POPUP_CLOSE_BTN = By.id("popup-widget111379-close-icon");
+//    By POPUP_CLOSE_BTN = By.id("popup-widget72915-close-icon");
+    By POPUP_CLOSE_BTN = By.xpath("//div[@class='x-el x-el-div c1-1 c1-2 c1-r c1-49 c1-5h c1-5i c1-5f c1-12 c1-u c1-9m c1-an c1-b c1-c c1-d c1-e c1-f c1-g']//*[name()='svg']//*[name()='path' and contains(@fill-rule,'evenodd')]");
+    By POPUP_CLOSE = By.xpath("//div[@data-ux='Block']/a[text()='FIND MY CANDY!']");
     By SHARING_TO_SOCIAL_MEDIA_TITLE = By.xpath("//span[normalize-space()='Connect with us on Social Media']");
     By FACEBOOK_ICON = By.xpath("//a[@aria-label=\"Facebook Social Link\"]");
     By INSTAGRAM_ICON = By.xpath("//a[@aria-label=\"Instagram Social Link\"]");
@@ -77,8 +80,9 @@ public class HomePage extends BasePage {
     }
 
     public void closePopUpBTN() {
-        waitForElementToBeVisible(POPUP_CLOSE_BTN);
-        clickOnElement(POPUP_CLOSE_BTN);
+//        waitForElementToBeVisible(POPUP_CLOSE_BTN);
+//        clickOnElement(POPUP_CLOSE_BTN);
+        clickOnElement(POPUP_CLOSE);
     }
 
     public void checkSharingToSocialMediaTitle() {

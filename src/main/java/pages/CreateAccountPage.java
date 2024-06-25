@@ -1,6 +1,7 @@
 package pages;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,7 +16,7 @@ public class CreateAccountPage extends BasePage {
     By LAST_NAME_INPUT = By.xpath("//input[@placeholder='Last name']");
     By EMAIL_INPUT = By.xpath("//input[@placeholder='Email']");
     By PHONE_INPUT = By.xpath("//input[@placeholder='Phone (optional)']");
-    By CHECKBOX_MAILING = By.xpath("//input[@data-ux='InputCheckbox']/following-sibling::div[@data-ux='Element']");
+//    By CHECKBOX_MAILING = By.xpath("//input[@data-ux='InputCheckbox']/following-sibling::div[@data-ux='Element']");
     By CREATE_ACCOUNT_BTN = By.xpath("//button[normalize-space()='Create Account']");
     By CREATE_ACCOUNT_SUCCESS_SCREEN = By.xpath("//h4[@role='heading']");
 
@@ -39,10 +40,11 @@ public class CreateAccountPage extends BasePage {
     public void setPhone(String phone) {
         driver.findElement(PHONE_INPUT).sendKeys(phone);
     }
-    public void clickOnCheckboxMailing() {
-        isElementPresent(CHECKBOX_MAILING);
-        clickOnElement(CHECKBOX_MAILING);
-    }
+
+//    public void clickOnCheckboxMailing() {
+//        isElementPresent(CHECKBOX_MAILING);
+//        clickOnElement(CHECKBOX_MAILING);
+//    }
     public void clickOnCreateAccountBtn() {
         isElementPresent(CREATE_ACCOUNT_BTN);
         clickOnElement(CREATE_ACCOUNT_BTN);

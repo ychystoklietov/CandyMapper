@@ -23,14 +23,16 @@ public class HomePage extends BasePage {
 
     String baseURL = "https://candymapper.com/";
 
-    By JOIN_US_BTN = By.cssSelector("a[href='/join-us'].c2-g");
+    By JOIN_US_BTN = By.cssSelector("a[href='/join-us'].c2-x");
     By HALLOWEEN_PARTY_BTN = By.cssSelector("a[href='/halloween-party'].c1-56");
     By CONTACT_US_NAME_FIELD = By.id("input28");
     By CONTACT_US_EMAIL_FIELD = By.id("input28");
+
 //    By POPUP_CLOSE_BTN = By.id("popup-widget72915-close-icon");
-    By POPUP_CLOSE_BTN = By.xpath("//div[@class='x-el x-el-div c1-1 c1-2 c1-r c1-49 c1-5h c1-5i c1-5f c1-12 c1-u c1-9m c1-an c1-b c1-c c1-d c1-e c1-f c1-g']//*[name()='svg']//*[name()='path' and contains(@fill-rule,'evenodd')]");
-    By POPUP_CLOSE = By.xpath("//div[@data-ux='Block']/a[text()='FIND MY CANDY!']");
+    By POPUP_CLOSE_BTN = By.xpath("//*[contains(@id, \"close-icon\")]");
+    By FIND_MY_CANDY_BTN = By.xpath("//div[@data-ux='Block']/a[text()='FIND MY CANDY!']");
     By SHARING_TO_SOCIAL_MEDIA_TITLE = By.xpath("//span[normalize-space()='Connect with us on Social Media']");
+    By VALIDATE_RANDOM_DOLLAR_TITLE = By.xpath("//span[normalize-space()='Validate Random Dollar Amounts']");
     By FACEBOOK_ICON = By.xpath("//a[@aria-label=\"Facebook Social Link\"]");
     By INSTAGRAM_ICON = By.xpath("//a[@aria-label=\"Instagram Social Link\"]");
     By LINKEDIN_ICON = By.xpath("//a[@aria-label=\"LinkedIn Social Link\"]");
@@ -67,6 +69,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickJoinUsBTN() {
+        waitForElementToBeVisible(JOIN_US_BTN);
         isElementPresent(JOIN_US_BTN);
         clickOnElement(JOIN_US_BTN);
     }
@@ -80,9 +83,10 @@ public class HomePage extends BasePage {
     }
 
     public void closePopUpBTN() {
-//        waitForElementToBeVisible(POPUP_CLOSE_BTN);
-//        clickOnElement(POPUP_CLOSE_BTN);
-        clickOnElement(POPUP_CLOSE);
+        waitForElementToBeVisible(POPUP_CLOSE_BTN);
+        clickOnElement(POPUP_CLOSE_BTN);
+//        waitForElementToBeVisible(FIND_MY_CANDY_BTN);
+//        clickOnElement(FIND_MY_CANDY_BTN);
     }
 
     public void checkSharingToSocialMediaTitle() {
@@ -124,7 +128,7 @@ public class HomePage extends BasePage {
     }
 
     public List<WebElement> getDropdownList() {
-        scrollToElement(SHARING_TO_SOCIAL_MEDIA_TITLE);
+        scrollToElement(VALIDATE_RANDOM_DOLLAR_TITLE);
         WebElement iframe = driver.findElement(By.xpath("//div[@id='bs-6']/span/iframe"));
         driver.switchTo().frame(iframe);
         return driver.findElements(By.xpath("//option"));

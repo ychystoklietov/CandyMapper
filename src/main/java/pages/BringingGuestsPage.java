@@ -15,7 +15,6 @@ public class BringingGuestsPage extends BasePage {
 
     By BRINGING_GUESTS_TITLE_TEXT = By.xpath("//span[text()=\"Are you bringing any guests?\"]");
     By GET_NOTIFIED_TITLE_TEXT = By.xpath("//h2[@role='heading']");
-
     By EMAIL_NOTIFIED_INPUT = By.xpath("//input[@role=\"textbox\"]");
     By REMIND_ME_BTN = By.xpath("//button[@type='submit']");
     By SUCCESS_INFO_NOTIFIED = By.xpath("//p[@data-aid=\"CONFIRM_TEXT_REND\"]");

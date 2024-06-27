@@ -11,6 +11,7 @@ public class InvalidLoginTest extends BaseTest {
     public void invalidLogin() {
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
+
         homePage.openURL();
         homePage.closePopUpBTN();
         homePage.clickJoinUsBTN();

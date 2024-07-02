@@ -17,11 +17,13 @@ public class HalloweenPartyPage extends BasePage {
 
 
     public void checkHalloweenPartyTitleText() {
+        log.info("Spawdzam, że `Hallowen party title` jest widoczny");
         isElementPresent(HALLOWEEN_PARTY_TITLE_TEXT);
         Assert.assertEquals(getText(HALLOWEEN_PARTY_TITLE_TEXT), "Halloween Party");
     }
 
     public void clickOnHostingBtn() {
+        log.info("Klikam CTA `Hosting party`");
         isElementPresent(HOSTING_PARTY_BTN);
         clickOnElement(HOSTING_PARTY_BTN);
     }

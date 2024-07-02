@@ -23,6 +23,7 @@ public class BringingGuestsPage extends BasePage {
 
 
     public void checkBringingGuestsTitle() {
+        log.info("Sprawdzenie tytulu strony");
         isElementPresent(BRINGING_GUESTS_TITLE_TEXT);
         Assert.assertEquals(getText(BRINGING_GUESTS_TITLE_TEXT), "Are you bringing any guests?");
     }
@@ -33,16 +34,19 @@ public class BringingGuestsPage extends BasePage {
     }
 
     public void checkSuccessInfoNotified() {
+        log.info("Srawdzam potwierdzenie po wpisaniu maila");
         isElementPresent(SUCCESS_INFO_NOTIFIED);
         Assert.assertEquals(getText(SUCCESS_INFO_NOTIFIED), "If you supplied a real email we just send a validation to it.");
     }
 
     public void setEmail(String mail) {
+        log.info("Wpisuję email");
         scrollToElement(EMAIL_NOTIFIED_INPUT);
         driver.findElement(EMAIL_NOTIFIED_INPUT).sendKeys(mail);
     }
 
     public void clickOnRemindMeBTN() {
+        log.info("Klikam w CTA `Remind me`");
         isElementPresent(REMIND_ME_BTN);
         clickOnElement(REMIND_ME_BTN);
     }

@@ -1,6 +1,5 @@
 package tests;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -10,6 +9,7 @@ import java.time.Duration;
 public class BaseTest {
 
     public WebDriver driver;
+
 
     @BeforeClass
     public void setUp() {

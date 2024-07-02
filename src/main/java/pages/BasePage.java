@@ -17,7 +17,6 @@ public class BasePage {
 
     public WebDriver driver;
     public WebDriverWait wait;
-
     protected static final Logger log = LogManager.getLogger();
 
 

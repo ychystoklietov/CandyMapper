@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/ychystoklietov/Documents/CandyMapper/CandyMapper">
+        <classes>
+            <class name="tests.CountryDropdownTest">
+                <methods>
+                    <include name="checkRightCountryFromDropdown"/>
+                    <include name="checkWrongCountryFromDropdown"/>
+                </methods>
+            </class>
+            <class name="tests.CreateAccountTest">
+                <methods>
+                    <include name="SignIn"/>
+                </methods>
+            </class>
+            <class name="tests.HostingZombiePartyTest">
+                <methods>
+                    <include name="hostingZombiePartyWay"/>
+                </methods>
+            </class>
+            <class name="tests.InvalidLoginTest">
+                <methods>
+                    <include name="invalidLogin"/>
+                </methods>
+            </class>
+            <class name="tests.SocialMediaLinksTest">
+                <methods>
+                    <include name="checkSocialMediaLinks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

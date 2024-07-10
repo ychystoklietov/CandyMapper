@@ -490,3 +490,119 @@
 2024-45-02 19:45:24.688 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
 2024-45-02 19:45:24.688 [main] INFO  pages.BasePage - Sprawdzam request
 2024-45-02 19:45:24.906 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:02.886 [main] INFO  pages.BasePage - Otwieram strone CandyMapper
+2024-57-10 14:57:04.156 [main] INFO  pages.BasePage - Zamykam popup
+2024-57-10 14:57:04.157 [main] INFO  pages.BasePage - Czekam na element: By.xpath: //*[contains(@id, "close-icon")]
+2024-57-10 14:57:04.174 [main] INFO  pages.BasePage - Czekam aż można będzie kliknąć element: By.xpath: //*[contains(@id, "close-icon")]
+2024-57-10 14:57:04.211 [main] INFO  pages.BasePage - Klikam w: By.xpath: //*[contains(@id, "close-icon")]
+2024-57-10 14:57:04.211 [main] INFO  pages.BasePage - Sprawdzam tytul `Sharing to social media`
+2024-57-10 14:57:04.211 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:04.345 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:04.350 [main] INFO  pages.BasePage - Pobieram teskt elementu: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:04.350 [main] INFO  pages.BasePage - Czekam na element: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:04.363 [main] INFO  pages.BasePage - Pobralem tekst elementu: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:04.370 [main] INFO  pages.BasePage - Sprawdzam link facebook
+2024-57-10 14:57:04.371 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="Facebook Social Link"]
+2024-57-10 14:57:04.493 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="Facebook Social Link"]
+2024-57-10 14:57:04.502 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:04.507 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:04.509 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:04.683 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:05.443 [main] INFO  pages.BasePage - Valid link: https://www.facebook.com/209696008899011 - Response Code: 200
+2024-57-10 14:57:05.444 [main] INFO  pages.BasePage - Sprawdzam link instgram
+2024-57-10 14:57:05.444 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="Instagram Social Link"]
+2024-57-10 14:57:05.559 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="Instagram Social Link"]
+2024-57-10 14:57:05.568 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:05.572 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:05.572 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:05.684 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:06.052 [main] INFO  pages.BasePage - Valid link: https://www.instagram.com/qtpmgrossman - Response Code: 200
+2024-57-10 14:57:06.052 [main] INFO  pages.BasePage - Sprawdzam link linkedin
+2024-57-10 14:57:06.052 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="LinkedIn Social Link"]
+2024-57-10 14:57:06.189 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="LinkedIn Social Link"]
+2024-57-10 14:57:06.199 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:06.202 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:06.203 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:06.387 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:06.558 [main] ERROR pages.BasePage - Link is broken. HTTP Status code: 999
+2024-57-10 14:57:06.558 [main] INFO  pages.BasePage - Sprawdzam link pinterest 
+2024-57-10 14:57:06.558 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="Pinterest Social Link"]
+2024-57-10 14:57:06.677 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="Pinterest Social Link"]
+2024-57-10 14:57:06.686 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:06.689 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:06.689 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:07.529 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:08.236 [main] INFO  pages.BasePage - Valid link: https://www.pinterest.com/paulgrossman/candymapper/ - Response Code: 200
+2024-57-10 14:57:08.237 [main] INFO  pages.BasePage - Sprawdzam link twitter
+2024-57-10 14:57:08.237 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="Twitter Social Link"]
+2024-57-10 14:57:08.378 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="Twitter Social Link"]
+2024-57-10 14:57:08.394 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:08.399 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:08.399 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:12.905 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:13.624 [main] ERROR pages.BasePage - Link is broken. HTTP Status code: 403
+2024-57-10 14:57:13.624 [main] INFO  pages.BasePage - Sprawdzam link youtube
+2024-57-10 14:57:13.625 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="YouTube Social Link"]
+2024-57-10 14:57:13.763 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="YouTube Social Link"]
+2024-57-10 14:57:13.777 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:13.782 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:13.784 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:13.941 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:14.263 [main] INFO  pages.BasePage - Valid link: https://www.youtube.com/PaulGrossmanTheDarkArtsWizard - Response Code: 200
+2024-57-10 14:57:46.948 [main] INFO  pages.BasePage - Otwieram strone CandyMapper
+2024-57-10 14:57:48.197 [main] INFO  pages.BasePage - Zamykam popup
+2024-57-10 14:57:48.200 [main] INFO  pages.BasePage - Czekam na element: By.xpath: //*[contains(@id, "close-icon")]
+2024-57-10 14:57:48.217 [main] INFO  pages.BasePage - Czekam aż można będzie kliknąć element: By.xpath: //*[contains(@id, "close-icon")]
+2024-57-10 14:57:48.256 [main] INFO  pages.BasePage - Klikam w: By.xpath: //*[contains(@id, "close-icon")]
+2024-57-10 14:57:48.256 [main] INFO  pages.BasePage - Sprawdzam tytul `Sharing to social media`
+2024-57-10 14:57:48.256 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:48.394 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:48.398 [main] INFO  pages.BasePage - Pobieram teskt elementu: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:48.399 [main] INFO  pages.BasePage - Czekam na element: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:48.412 [main] INFO  pages.BasePage - Pobralem tekst elementu: By.xpath: //span[normalize-space()='Connect with us on Social Media']
+2024-57-10 14:57:48.419 [main] INFO  pages.BasePage - Sprawdzam link facebook
+2024-57-10 14:57:48.419 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="Facebook Social Link"]
+2024-57-10 14:57:48.547 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="Facebook Social Link"]
+2024-57-10 14:57:48.555 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:48.561 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:48.561 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:48.680 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:49.344 [main] INFO  pages.BasePage - Sprawdzam link instgram
+2024-57-10 14:57:49.345 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="Instagram Social Link"]
+2024-57-10 14:57:49.481 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="Instagram Social Link"]
+2024-57-10 14:57:49.490 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:49.494 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:49.494 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:49.611 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-57-10 14:57:49.888 [main] INFO  pages.BasePage - Sprawdzam link linkedin
+2024-57-10 14:57:49.888 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //a[@aria-label="LinkedIn Social Link"]
+2024-57-10 14:57:50.014 [main] INFO  pages.BasePage - Emelent widoczny: By.xpath: //a[@aria-label="LinkedIn Social Link"]
+2024-57-10 14:57:50.025 [main] INFO  pages.BasePage - Pobieram link
+2024-57-10 14:57:50.028 [main] INFO  pages.BasePage - Sprawdzam, że link nie jest null
+2024-57-10 14:57:50.028 [main] INFO  pages.BasePage - Sprawdzam request
+2024-57-10 14:57:50.138 [main] INFO  pages.BasePage - Pobieram kod odpowiedzi
+2024-21-10 15:21:19.826 [main] INFO  pages.BasePage - Otwieram strone CandyMapper
+2024-21-10 15:21:20.909 [main] INFO  pages.BasePage - Zamykam popup
+2024-21-10 15:21:20.910 [main] INFO  pages.BasePage - Czekam na element: By.xpath: //*[contains(@id, "close-icon")]
+2024-21-10 15:21:20.928 [main] INFO  pages.BasePage - Czekam aż można będzie kliknąć element: By.xpath: //*[contains(@id, "close-icon")]
+2024-21-10 15:21:20.968 [main] INFO  pages.BasePage - Klikam w: By.xpath: //*[contains(@id, "close-icon")]
+2024-21-10 15:21:20.969 [main] INFO  pages.BasePage - Wybieram odpowiedni kraj z listy 
+2024-21-10 15:21:20.969 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //span[normalize-space()='Validate Random Dollar Amounts']
+2024-21-10 15:21:21.101 [main] INFO  pages.BasePage - Szukam iframe na stronie
+2024-21-10 15:21:21.108 [main] INFO  pages.BasePage - Robię swticha na iframe
+2024-21-10 15:21:21.118 [main] INFO  pages.BasePage - Pobieram listę dropdown
+2024-21-10 15:21:21.127 [main] INFO  pages.BasePage - Sprawdzam listę krajów
+2024-21-10 15:21:21.260 [main] INFO  pages.BasePage - Kraj Rutland znajduje się na liście
+2024-21-10 15:21:21.270 [main] INFO  pages.BasePage - Wybrano kraj: Rutland
+2024-21-10 15:21:21.270 [main] INFO  pages.BasePage - Robię switcha na web
+2024-21-10 15:21:33.944 [main] INFO  pages.BasePage - Otwieram strone CandyMapper
+2024-21-10 15:21:36.176 [main] INFO  pages.BasePage - Zamykam popup
+2024-21-10 15:21:36.176 [main] INFO  pages.BasePage - Czekam na element: By.xpath: //*[contains(@id, "close-icon")]
+2024-21-10 15:21:36.193 [main] INFO  pages.BasePage - Czekam aż można będzie kliknąć element: By.xpath: //*[contains(@id, "close-icon")]
+2024-21-10 15:21:36.229 [main] INFO  pages.BasePage - Klikam w: By.xpath: //*[contains(@id, "close-icon")]
+2024-21-10 15:21:36.230 [main] INFO  pages.BasePage - Wybieram odpowiedni kraj z listy 
+2024-21-10 15:21:36.230 [main] INFO  pages.BasePage - Scrolluje do elementu: By.xpath: //span[normalize-space()='Validate Random Dollar Amounts']
+2024-21-10 15:21:36.365 [main] INFO  pages.BasePage - Szukam iframe na stronie
+2024-21-10 15:21:36.371 [main] INFO  pages.BasePage - Robię swticha na iframe
+2024-21-10 15:21:36.381 [main] INFO  pages.BasePage - Pobieram listę dropdown
+2024-21-10 15:21:36.390 [main] INFO  pages.BasePage - Sprawdzam listę krajów

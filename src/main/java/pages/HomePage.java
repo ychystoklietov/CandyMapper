@@ -47,7 +47,7 @@ public class HomePage extends BasePage {
 
             log.info("Sprawdzam, że link nie jest null");
             if (url == null || url.isEmpty()) {
-                throw new RuntimeException("URL is either not configured for anchor tag or it is empty");
+                throw new RuntimeException("Adres URL nie jest skonfigurowany lub jest pusty.");
             }
 
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
@@ -58,13 +58,13 @@ public class HomePage extends BasePage {
             int responseCode = connection.getResponseCode();
 
             if (responseCode >= 400) {
-                throw new RuntimeException("Link is broken. HTTP Status code: " + responseCode);
+                throw new RuntimeException("Link jest uszkodzony. HTTP Status code: " + responseCode);
             } else {
-                System.out.println("Valid link: " + url + " - Response Code: " + responseCode);
+                System.out.println("Prawidłowy link: " + url + " - Response Code: " + responseCode);
                 return true;
             }
         } catch (IOException e) {
-            throw new RuntimeException("Error checking the link status", e);
+            throw new RuntimeException("Błąd podczas sprawdzania stanu linków", e);
         }
     }
 
@@ -162,9 +162,9 @@ public class HomePage extends BasePage {
         }
 
         if (!found) {
-            throw new RuntimeException("Error: Country '" + country + "' not found in the dropdown list.");
+            throw new RuntimeException("Błąd: Kraj '" + country + "' nie znaleziono na liście rozwijanej.");
         } else {
-            System.out.println("Country selected successfully: " + country);
+            System.out.println("Pomyślnie wybrany kraj: " + country);
         }
 
         log.info("Robię switcha na web");
